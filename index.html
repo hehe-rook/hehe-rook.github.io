@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>中国青少年发展服务中心</title>
+  <title>陕西省人民政府高级专业技术任职资格查询官网</title>
   <style>
     body { margin: 0; padding: 0; }
     #header { margin-left: auto; margin-right: auto; width: 960px; height: 158px; }
@@ -28,81 +28,97 @@
     var idNumber = idNumberInput.value.trim();
     var certificate = certificateSelect.value;
   
-    if (name === "杨俊国" && idNumber === "410329197201182558" && certificate === "option2") {
-      var windowContent = "<h1>陕西省人民政府高级专业技术任职资格查询</h1>";
-      windowContent += "<p>姓名：" + "杨俊国" + "</p>";
-      windowContent += "<p>身份证：" + "410329197201182558" + "</p>";
-      windowContent += "<p>证书：" + "道路与桥梁高级工程师" + "</p>";
-      windowContent += "<p>资格名称：" + "高级工程师" + "</p>";
-      windowContent += "<p>专业名称：" + "道路与桥梁" + "</p>";
-      windowContent += "<p>批准文号：" + "陕人职字[2009]10号" + "</p>";
-      windowContent += "<p>授予时间：" + "2009年04月15日" + "</p>";
-      windowContent += "<p>发证时间：" + "2009年05月01日" + "</p>";
-      windowContent += "<p>编号：" + "0914190" + "</p>";
-      windowContent += "<img src='images/3.png' alt='照片' />";
-  
-      var screenWidth = window.screen.width;
-var screenHeight = window.screen.height;
-var windowWidth = 400;
-var windowHeight = 500;
-var left = (screenWidth - windowWidth) / 2;
-var top = (screenHeight - windowHeight) / 2;
+    if (name && idNumber && certificate) {
+      if (name === "杨俊国" && idNumber === "410329197201182558" && certificate === "option2") {
+        var screenWidth = window.screen.width;
+        var screenHeight = window.screen.height;
+        var windowWidth = 600; // 修改为所需的宽度
+        var windowHeight = 600; // 修改为所需的高度
+        var left = (screenWidth - windowWidth) / 2;
+        var top = (screenHeight - windowHeight) / 2;
 
-var popupWindow = window.open('search.html', '_blank', 'width=400, height=500, top=' + top + ', left=' + left + ', screenX=' + left + ', screenY=' + top);
-
+        var popupWindow = window.open('popup.html', '_blank', 'width=' + windowWidth + ', height=' + windowHeight + ', top=' + top + ', left=' + left + ', screenX=' + left + ', screenY=' + top);
+      } else {
+        alert("输入的信息不正确，请重新填写。");
+      }
+    } else {
+      alert("请填写完整的信息。");
     }
   }
-  </script>
+</script>
 </head>
 <body>
   <div style="display: flex; justify-content: flex-start;">
-    <img src="images/2.png" width="285" height="65" style="margin-right: 20px;" />
+    <a href="http://www.shaanxi.gov.cn/?key=%BB%B3%CE%C4&att=s4294967296%3A4294983638">
+      <img src="images/2.png" width="285" height="65" style="margin-right: 20px;" />
+    </a>
   </div>
 
   <form name="form1" action="" method="post">
-    <table width="100%" border="0" cellspacing="10" cellpadding="0">
-      <tbody>
-        <tr>
-          <th colspan="2" scope="row" style="color: red; font-size: 40px;">陕西省人民政府高级专业技术任职资格查询</th>
-        </tr>
-        <tr>
-          <th width="34%" align="right" scope="row">姓名:</th>
-          <td width="66%">
-            <input type="text" name="name" id="name">
-          </td>
-        </tr>
-        <tr>
-          <th align="right" scope="row">身份证号:</th>
-          <td>
-            <input type="text" name="IdNumber" id="IdNumber">
-          </td>
-        </tr>
-        <tr>
-          <th align="right" scope="row">资格名称:</th>
-          <td>
-            <select name="CertificateNumber" id="CertificateNumber">
-              <option value="" disabled selected>请选择证书类型</option>
-              <option value="option1">一级造价工程师</option>
-              <option value="option2">道路与桥梁高级工程师</option>
-              <option value="option3">招标师资格证书</option>
-              <option value="option4">房地产估价师</option>
-              <option value="option5">注册测绘师</option>
-              <option value="option6">执业药师</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2" scope="row">
-            <img src="images/8.png" width="350" height="39" onclick="openPopupWindow();">
-          </th>
-        </tr>
-        <tr>
-          <th scope="row">&nbsp;</th>
-          <td>&nbsp;</td>
-        </tr>
-      </tbody>
-    </table>
-  </form>
+  <table width="100%" border="0" cellspacing="20" cellpadding="10">
+    <!-- 表格属性 cellspacing 和 cellpadding 调整为 20 和 10 -->
+    <tbody>
+      <tr>
+        <th colspan="2" scope="row" style="color: red; font-size: 40px;">陕西省人民政府高级专业技术任职资格查询</th>
+      </tr>
+      <tr>
+        <th width="34%" align="right" scope="row">姓名:</th>
+        <td width="66%">
+          <input type="text" name="name" id="name">
+        </td>
+      </tr>
+      <tr>
+        <th align="right" scope="row">身份证号:</th>
+        <td>
+          <input type="text" name="IdNumber" id="IdNumber">
+        </td>
+      </tr>
+      <tr>
+        <th align="right" scope="row">资格名称:</th>
+        <td>
+          <select name="CertificateNumber" id="CertificateNumber">
+            <option value="" disabled selected>请选择证书类型</option>
+            <option value="option1">一级造价工程师</option>
+            <option value="option2">道路与桥梁高级工程师</option>
+            <option value="option3">招标师资格证书</option>
+            <option value="option4">房地产估价师</option>
+            <option value="option5">注册测绘师</option>
+            <option value="option6">执业药师</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+  <th colspan="2" scope="row">
+          <img src="images/8.png" width="350" height="39" onclick="openPopupWindow();">
+        </th>      
+      </tr>
+      <th colspan="2" scope="row">
+        <img src="images/4.png" width="470" height="228" onclick="window.location.href='http://www.shaanxi.gov.cn/zfxxgk/zcjd/lyc/202402/t20240219_2317455.html'">
+      </th>
+      <tr>
+        <th scope="row">&nbsp;</th>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<style>
+  .main.footer_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .xf_box {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<form>
+  <!-- 表单内容 -->
 
   <div class="main footer_box">
     <div class="i_con">
@@ -110,26 +126,26 @@ var popupWindow = window.open('search.html', '_blank', 'width=400, height=500, t
       <div class="right footer_right">
         <h5>
           <span>陕ICP备05008303号-1</span>
-				<span>陕西省人事考试中心版权所有,未经授权禁止复制或建立镜像</span>
-				<span>邮箱：<a href="mailto:sxsrsks@126.com">sxsrsks@126.com</a></span>
-			</h5>
-			<h5>
-				<span>地 址：陕西省西安市碑林区建设东路3号</span>
-				<span></span>
-				<span>邮政编码：</span>
-				<span><a href="javascript:;" target="_blank">站长统计</a></span>
-			</h5>
-		</div>
-	</div>
-</div>
-<div class="xf_box">
-	<ul id="jump">
-		<li class="return_top" style="">
-			<a id="top" href="http://www.sxhrgov.com/">返回顶部</a>
-		</li>
-	</ul>
-</div>
-
+          <span>陕西省人事考试中心版权所有，未经授权禁止复制或建立镜像</span>
+          <span>邮箱：<a href="mailto:sxsrsks@126.com">sxsrsks@126.com</a></span>
+        </h5>
+        <h5>
+          <span>地 址：陕西省西安市碑林区建设东路3号</span>
+          <span></span>
+          <span>邮政编码：</span>
+          <span><a href="javascript:;" target="_blank">站长统计</a></span>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="xf_box">
+    <ul id="jump">
+      <li class="return_top" style="">
+        <a id="top" href="http://www.sxhrgov.com/">返回顶部</a>
+      </li>
+    </ul>
+  </div>
+</form>
 
 
 </body></html>
