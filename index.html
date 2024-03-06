@@ -1,62 +1,121 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0037)http://www.linkcareer.cn/certificate/ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<title>中国青少年发展服务中心</title>
-<style>
-body{ margin:0; padding:0;}
-#header{margin-left:auto; margin-right:auto; width:960px; height:158px;}
-#main{margin-left:auto; margin-right:auto; width:946px; height:282px; background-image:url(images/bg.png); margin-top:50px; color:#333; font-size:12px; padding-top:100px;}
-input{width:250px;}
-#footer{margin-left:auto; margin-right:auto; width:100%; height:80px; text-align:center; font-size:12px; border-top: solid 2px #efefef; margin-top:20px; padding-top:20px;}
-.footer{ margin-top:20px;}
-</style><style type="text/css">
-:root #header + #content > #left > #rlblock_left,
-:root .container > .ads:first-child,
-:root .footer > #box[style="width:100%;height:100%;position:fixed;top:0"],
-:root .content > a > .topline,
-:root .content > .ads:first-child
-{ display: none !important; }</style></head>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>中国青少年发展服务中心</title>
+  <style>
+    body { margin: 0; padding: 0; }
+    #header { margin-left: auto; margin-right: auto; width: 960px; height: 158px; }
+    #main { margin-left: auto; margin-right: auto; width: 946px; height: 282px; background-image: url(images/2.png); margin-top: 50px; color: #333; font-size: 12px; padding-top: 100px; }
+    input { width: 250px; }
+    #footer { margin-left: auto; margin-right: auto; width: 100%; height: 80px; text-align: center; font-size: 12px; border-top: solid 2px #efefef; margin-top: 20px; padding-top: 20px; }
+    .footer { margin-top: 20px; }
+  </style>
+  <style type="text/css">
+    :root #header + #content > #left > #rlblock_left,
+    :root .container > .ads:first-child,
+    :root .footer > #box[style="width:100%;height:100%;position:fixed;top:0"],
+    :root .content > a > .topline,
+    :root .content > .ads:first-child { display: none !important; }
+  </style>
+<script>
+  function openPopupWindow() {
+    var nameInput = document.getElementById("name");
+    var idNumberInput = document.getElementById("IdNumber");
+    var certificateSelect = document.getElementById("CertificateNumber");
+  
+    var name = nameInput.value.trim();
+    var idNumber = idNumberInput.value.trim();
+    var certificate = certificateSelect.value;
+  
+    if (name === "杨俊国" && idNumber === "410329197201182558" && certificate === "option2") {
+      var screenWidth = window.screen.width;
+      var screenHeight = window.screen.height;
+      var windowWidth = 400;
+      var windowHeight = 300;
+      var left = (screenWidth - windowWidth) / 2;
+      var top = (screenHeight - windowHeight) / 2;
+  
+      var popupWindow = window.open('', '_blank', 'width=400, height=300, top=' + top + ', left=' + left);
+      // 这里的参数可以根据需要进行调整，指定弹窗的宽度、高度以及位置
+    }
+  }
+  </script>
+</head>
 <body>
-<div id="header">
-<img src="images/4.png" width="960" height="158"></div>
-<div id="main">
-<form name="form1" action="https://zhuanlan.zhihu.com/p/183977963#%E5%9C%BA%E6%99%AF%E5%86%8D%E7%8E%B0" method="post">
+  <div style="display: flex; justify-content: flex-start;">
+    <img src="images/2.png" width="285" height="65" style="margin-right: 20px;" />
+  </div>
 
-  <table width="100%" border="0" cellspacing="10" cellpadding="0">
-    <tbody><tr>
-      <th colspan="2" scope="row">( 任意输入以下两项内容即可查询。)</th>
-      </tr>
-    <tr>
-      <th width="34%" align="right" scope="row">姓名:</th>
-      <td width="66%">
-        <input type="text" name="name" id="name"></td>
-    </tr>
-    <tr>
-      <th align="right" scope="row">身份证号:</th>
-      <td> <input type="text" name="IdNumber" id="IdNumber"></td>
-    </tr>
-    <tr>
-      <th align="right" scope="row">证书编号:</th>
-      <td> <input type="text" name="CertificateNumber" id="CertificateNumber"></td>
-    </tr>
-    <tr>
-      <th colspan="2" scope="row">
-        <img src="images/2.png" width="95" height="26" onclick=" document.form1.submit();"></th>
-      </tr>
-    <tr>
-      <th scope="row">&nbsp;</th>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody></table>
-</form>
+  <form name="form1" action="" method="post">
+    <table width="100%" border="0" cellspacing="10" cellpadding="0">
+      <tbody>
+        <tr>
+          <th colspan="2" scope="row" style="color: red; font-size: 40px;">陕西省人民政府高级专业技术任职资格查询</th>
+        </tr>
+        <tr>
+          <th width="34%" align="right" scope="row">姓名:</th>
+          <td width="66%">
+            <input type="text" name="name" id="name">
+          </td>
+        </tr>
+        <tr>
+          <th align="right" scope="row">身份证号:</th>
+          <td>
+            <input type="text" name="IdNumber" id="IdNumber">
+          </td>
+        </tr>
+        <tr>
+          <th align="right" scope="row">资格名称:</th>
+          <td>
+            <select name="CertificateNumber" id="CertificateNumber">
+              <option value="" disabled selected>请选择证书类型</option>
+              <option value="option1">一级造价工程师</option>
+              <option value="option2">道路与桥梁高级工程师</option>
+              <option value="option3">招标师资格证书</option>
+              <option value="option4">房地产估价师</option>
+              <option value="option5">注册测绘师</option>
+              <option value="option6">执业药师</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" scope="row">
+            <img src="images/8.png" width="350" height="39" onclick="openPopupWindow();">
+          </th>
+        </tr>
+        <tr>
+          <th scope="row">&nbsp;</th>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+  <div class="main footer_box">
+    <div class="i_con">
+      <div class="left footer_left"></div>
+      <div class="right footer_right">
+        <h5>
+          <span>陕ICP备05008303号-1</span>
+				<span>陕西省人事考试中心版权所有,未经授权禁止复制或建立镜像</span>
+				<span>邮箱：<a href="mailto:sxsrsks@126.com">sxsrsks@126.com</a></span>
+			</h5>
+			<h5>
+				<span>地 址：陕西省西安市碑林区建设东路3号</span>
+				<span></span>
+				<span>邮政编码：</span>
+				<span><a href="javascript:;" target="_blank">站长统计</a></span>
+			</h5>
+		</div>
+	</div>
 </div>
-
-
-<div id="footer">
-
-版权所有:中国青少年发展服务中心
+<div class="xf_box">
+	<ul id="jump">
+		<li class="return_top" style="">
+			<a id="top" href="http://www.sxhrgov.com/">返回顶部</a>
+		</li>
+	</ul>
 </div>
 
 
