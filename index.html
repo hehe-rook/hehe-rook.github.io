@@ -42,14 +42,14 @@
       windowContent += "<img src='images/3.png' alt='照片' />";
   
       var screenWidth = window.screen.width;
-      var screenHeight = window.screen.height;
-      var windowWidth = 400;
-      var windowHeight = 500;
-      var left = (screenWidth - windowWidth) / 2;
-      var top = (screenHeight - windowHeight) / 2;
-  
-      var popupWindow = window.open('', '_blank', 'width=400, height=500, top=' + top + ', left=' + left);
-      popupWindow.document.write(windowContent);
+var screenHeight = window.screen.height;
+var windowWidth = 400;
+var windowHeight = 500;
+var left = (screenWidth - windowWidth) / 2;
+var top = (screenHeight - windowHeight) / 2;
+
+var popupWindow = window.open('popup.html', '_blank', 'width=400, height=500, top=' + top + ', left=' + left + ', screenX=' + left + ', screenY=' + top);
+
     }
   }
   </script>
