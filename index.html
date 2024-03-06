@@ -29,15 +29,27 @@
     var certificate = certificateSelect.value;
   
     if (name === "杨俊国" && idNumber === "410329197201182558" && certificate === "option2") {
+      var windowContent = "<h1>陕西省人民政府高级专业技术任职资格查询</h1>";
+      windowContent += "<p>姓名：" + "杨俊国" + "</p>";
+      windowContent += "<p>身份证：" + "410329197201182558" + "</p>";
+      windowContent += "<p>证书：" + "道路与桥梁高级工程师" + "</p>";
+      windowContent += "<p>资格名称：" + "高级工程师" + "</p>";
+      windowContent += "<p>专业名称：" + "道路与桥梁" + "</p>";
+      windowContent += "<p>批准文号：" + "陕人职字[2009]10号" + "</p>";
+      windowContent += "<p>授予时间：" + "2009年04月15日" + "</p>";
+      windowContent += "<p>发证时间：" + "2009年05月01日" + "</p>";
+      windowContent += "<p>编号：" + "0914190" + "</p>";
+      windowContent += "<img src='images/3.png' alt='照片' />";
+  
       var screenWidth = window.screen.width;
       var screenHeight = window.screen.height;
       var windowWidth = 400;
-      var windowHeight = 300;
+      var windowHeight = 500;
       var left = (screenWidth - windowWidth) / 2;
       var top = (screenHeight - windowHeight) / 2;
   
-      var popupWindow = window.open('', '_blank', 'width=400, height=300, top=' + top + ', left=' + left);
-      // 这里的参数可以根据需要进行调整，指定弹窗的宽度、高度以及位置
+      var popupWindow = window.open('', '_blank', 'width=400, height=500, top=' + top + ', left=' + left);
+      popupWindow.document.write(windowContent);
     }
   }
   </script>
